@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Termal Yazıcı Servisi</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #eef2f7;
+      color: #111827;
+    }
+   .page {
+     padding: 28px;
+    }
+
+    .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+    }
+    
+    .header {
+      background: linear-gradient(135deg, #2563eb, #0f172a);
+      color: white;
+      padding: 28px;
+      border-radius: 18px;
+      margin-bottom: 24px;
+      box-shadow: 0 10px 30px #0002;
+    }
+    .header h1 { margin: 0 0 8px; }
+    .header p { margin: 0; opacity: .9; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+    .card {
+      background: white;
+      padding: 22px;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px #0001;
+      border: 1px solid #e5e7eb;
+    }
+    .card.full { grid-column: 1 / -1; }
+    h2 { margin-top: 0; }
+    button {
+      padding: 11px 16px;
+      border: 0;
+      border-radius: 10px;
+      cursor: pointer;
+      background: #2563eb;
+      color: white;
+      margin: 5px 5px 5px 0;
+      font-weight: bold;
+    }
+    button.secondary { background: #0f172a; }
+    button.green { background: #16a34a; }
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0 12px;
+      border: 1px solid #d1d5db;
+      border-radius: 10px;
+      font-size: 14px;
+    }
+    textarea { min-height: 90px; }
+    pre {
+      background: #0f172a;
+      color: #d1d5db;
+      padding: 18px;
+      border-radius: 14px;
+      overflow: auto;
+      min-height: 180px;
+      max-height: 380px;
+    }
+    .status {
+      margin-top: 12px;
+      padding: 11px;
+      border-radius: 10px;
+      font-weight: bold;
+      display: none;
+    }
+    .ok { display:block; background:#dcfce7; color:#166534; }
+    .err { display:block; background:#fee2e2; color:#991b1b; }
+    .info {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 14px;
+    }
+    .btn-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 12px;
+    }
+
+    .btn-blue { background:#2563eb; }
+    .btn-dark { background:#0f172a; }
+    .btn-green { background:#16a34a; }
+    .btn-red { background:#dc2626; }
+    .btn-orange { background:#f97316; }
+    .btn-purple { background:#7c3aed; }
+
+    .section-title {
+    font-size: 13px;
+    font-weight: bold;
+    margin: 14px 0 6px;
+    color: #475569;
+    }
+    .pill {
+        background: rgba(255,255,255,.16);
+        color: #ffffff;
+        padding: 8px 12px;
+        border-radius: 999px;
+        font-size: 13px;
+        border: 1px solid rgba(255,255,255,.35);
+        font-weight: bold;
+    }
+
+    .creator-badge{
+    position:absolute;
+    top:30px;
+    right:40px;
+    background:rgba(255,255,255,0.15);
+    border:1px solid rgba(255,255,255,0.25);
+    color:#fff;
+    padding:10px 18px;
+    border-radius:14px;
+    font-size:14px;
+    font-weight:600;
+    backdrop-filter:blur(8px);
+    }
+    @media(max-width: 800px) {
+      .grid { grid-template-columns: 1fr; }
+      .container { padding: 18px; }
+    }
+    @media(max-width: 900px) {
+        .container {
+            grid-template-columns: 1fr;
+        }
+
+        .page {
+            padding: 16px;
+        }
+    }
+  </style>
+</head>
+<body>
+ <div class="page">
+  <div class="header">
+      <h1>Termal Yazıcı Servisi</h1>
+      <p>USB/LAN bağlantı, metin, QR, görsel yazdırma, log ve tekrar baskı paneli</p>
+      <div class="creator-badge">
+        Developed by Ayberk TEMİN
+     </div>
+      <div class="info">
+        <span class="pill">Localhost API</span>
+        <span class="pill">Mock Printer</span>
+        <span class="pill">Token Auth</span>
+        <span class="pill">CSV Export</span>
+      </div>
+    </div>
+<div class="container">
+    <div class="card">
+        <h2>Bağlantı</h2>
+
+        <div class="section-title">Bağlantı İşlemleri</div>
+        <div class="btn-row">
+            <button class="btn-blue" onclick="connectPrinter('usb')">USB Bağlan</button>
+            <button class="btn-blue" onclick="connectPrinter('lan')">LAN Bağlan</button>
+            <button class="btn-dark" onclick="getStatus()">Durum Kontrol</button>
+            <button class="btn-red" onclick="disconnectPrinter()">Bağlantıyı Kopar</button>
+        </div>
+
+        <div class="section-title">Kağıt Yönetimi</div>
+        <input id="paperCountInput" type="number" min="1" value="10" placeholder="Kağıt baskı adedi" />
+        <div class="btn-row">
+            <button class="btn-green" onclick="setPaper(true)">Kağıt Tak</button>
+            <button class="btn-orange" onclick="setPaper(false)">Kağıt Bitti</button>
+        </div>
+
+        <div id="paperCounter" class="status ok" style="display:block;">Kağıt sayacı: 10</div>
+
+        <div class="section-title">Hata Simülasyonu</div>
+        <div class="btn-row">
+            <button class="btn-orange" onclick="setError('PAPER_JAM')">Kağıt Sıkıştı</button>
+            <button class="btn-orange" onclick="setError('COVER_OPEN')">Kapak Açık</button>
+            <button class="btn-red" onclick="setError('OVERHEAT')">Aşırı Isındı</button>
+            <button class="btn-purple" onclick="setError('UNKNOWN_COMMAND')">Bilinmeyen Komut</button>
+            <button class="btn-green" onclick="setError(null)">Hatayı Temizle</button>
+        </div>
+
+        <div id="connectionStatus" class="status"></div>
+</div>
+
+      <div class="card">
+        <h2>Log İşlemleri</h2>
+        <button onclick="getLogs()">Logları Getir</button>
+        <button class="green" onclick="downloadCsv()">CSV İndir</button>
+        <div id="logsStatus" class="status"></div>
+      </div>
+
+      <div class="card">
+        <h2>Metin Yazdır</h2>
+        <select id="textLanguage" style="margin-bottom:12px;">
+        <option value="tr">Türkçe</option>
+        <option value="en">English</option>
+        </select>
+        <textarea id="text">Merhaba Dünya</textarea>
+        <button onclick="printText()">Metin Yazdır</button>
+        <div id="textStatus" class="status"></div>
+      </div>
+
+      <div class="card">
+        <h2>QR Yazdır</h2>
+        <input id="qr" value="https://qrtagnow.com" />
+        <button onclick="printQR()">QR Yazdır</button>
+        <div id="qrStatus" class="status"></div>
+      </div>
+
+      <div class="card">
+        <h2>Görsel Yazdır</h2>
+        <input id="image" value="https://via.placeholder.com/150" />
+        <button onclick="printImage()">Görsel Yazdır</button>
+        <div id="imageStatus" class="status"></div>
+      </div>
+
+      <div class="card">
+        <h2>Tekrar Baskı</h2>
+        <input id="reprintJobId" placeholder="Job ID giriniz" />
+        <button onclick="reprintJob()">Tekrar Bastır</button>
+        <div id="reprintStatus" class="status"></div>
+      </div>
+
+      <div class="card full">
+        <h2>Servis Çıktısı</h2>
+        <pre id="output">Çıktı burada görünecek...</pre>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const TOKEN = "123456";
+
+    function showStatus(id, ok, msg) {
+      const el = document.getElementById(id);
+      el.className = "status " + (ok ? "ok" : "err");
+      el.textContent = msg;
+    }
+
+    async function api(path, options = {}) {
+      const res = await fetch(path, {
+        headers: {
+          "Content-Type": "application/json",
+          "x-api-token": TOKEN
+        },
+        ...options
+      });
+
+      const data = await res.json();
+      document.getElementById("output").textContent = JSON.stringify(data, null, 2);
+
+      if (!res.ok || data.success === false) throw data;
+      return data;
+    }
+
+    async function connectPrinter(mode) {
+      try {
+        await api("/api/connect", {
+          method: "POST",
+          body: JSON.stringify({ mode })
+        });
+        showStatus("connectionStatus", true, mode.toUpperCase() + " bağlantısı başarılı");
+        getLogs();
+      } catch (err) {
+        showStatus("connectionStatus", false, "Bağlantı başarısız: " + (err.error || err.message));
+      }
+    }
+
+    async function getStatus() {
+      try {
+        const data = await api("/api/status");
+        updatePaperCounter(data.paperCount);
+        if (data.connected) {
+          showStatus("connectionStatus", true, data.mode.toUpperCase() + " bağlı");
+        } else {
+          showStatus("connectionStatus", false, "Yazıcı bağlı değil");
+        }
+      } catch {
+        showStatus("connectionStatus", false, "Durum alınamadı");
+      }
+    }
+
+    async function printText() {
+    try {
+
+        const textArea = document.getElementById("text");
+        const language = document.getElementById("textLanguage").value;
+
+        if (language === "en" && textArea.value === "Merhaba Dünya") {
+        textArea.value = "Hello World";
+        }
+
+        if (language === "tr" && textArea.value === "Hello World") {
+        textArea.value = "Merhaba Dünya";
+        }
+
+        await api("/api/print/text", {
+        method: "POST",
+        body: JSON.stringify({
+            text: textArea.value,
+            language
+        })
+        });
+
+        showStatus(
+        "textStatus",
+        true,
+        `Metin başarıyla yazdırıldı (${language})`
+        );
+
+        getLogs();
+        getStatus();
+
+    } catch (err) {
+
+        showStatus(
+        "textStatus",
+        false,
+        "Metin yazdırılamadı: " + (err.error || err.message)
+        );
+    }
+    }
+
+    async function printQR() {
+      try {
+        await api("/api/print/qr", {
+          method: "POST",
+          body: JSON.stringify({ data: document.getElementById("qr").value })
+        });
+        showStatus("qrStatus", true, "QR başarıyla yazdırıldı");
+        getLogs();
+      } catch (err) {
+        showStatus("qrStatus", false, "QR yazdırılamadı: " + (err.error || err.message));
+      }
+    }
+
+    async function printImage() {
+      try {
+        await api("/api/print/image", {
+          method: "POST",
+          body: JSON.stringify({ imageUrl: document.getElementById("image").value })
+        });
+        showStatus("imageStatus", true, "Görsel başarıyla yazdırıldı");
+        getLogs();
+      } catch (err) {
+
+        if (err.jobId) {
+            document.getElementById("reprintJobId").value = err.jobId;
+        }
+
+        showStatus(
+            "imageStatus",
+            false,
+            "Görsel yazdırılamadı: " + (err.error || err.message)
+        );
+        }
+    }
+
+    async function getLogs() {
+      try {
+        const data = await api("/api/logs");
+        showStatus("logsStatus", true, data.logs.length + " adet log listelendi");
+      } catch {
+        showStatus("logsStatus", false, "Loglar alınamadı");
+      }
+    }
+
+    async function downloadCsv() {
+  try {
+    const response = await fetch("/api/logs/export", {
+      headers: {
+        "x-api-token": TOKEN
+      }
+    });
+
+    if (!response.ok) {
+      throw new Error("CSV indirilemedi");
+    }
+
+    const blob = await response.blob();
+    const url = window.URL.createObjectURL(blob);
+
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "logs.csv";
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+
+    window.URL.revokeObjectURL(url);
+
+    showStatus("logsStatus", true, "CSV başarıyla indirildi");
+  } catch (err) {
+    showStatus("logsStatus", false, err.message || "CSV indirilemedi");
+  }
+}
+
+   async function reprintJob() {
+  const jobId = document.getElementById("reprintJobId").value.trim();
+
+  if (!jobId) {
+    showStatus("reprintStatus", false, "Lütfen Job ID giriniz");
+    return;
+  }
+
+  try {
+    await api("/api/reprint/" + jobId, { method: "POST" });
+    showStatus("reprintStatus", true, "İş tekrar bastırıldı");
+    getLogs();
+  } catch (err) {
+    showStatus("reprintStatus", false, "Tekrar baskı başarısız: " + (err.message || err.error || "Hata"));
+  }
+}
+
+   async function setPaper(value) {
+  try {
+    const count = Number(document.getElementById("paperCountInput").value || 10);
+
+    const data = await api("/api/paper", {
+      method: "POST",
+      body: JSON.stringify({
+        hasPaper: value,
+        count
+      })
+    });
+
+    updatePaperCounter(data.paperCount);
+
+    if (value) {
+      showStatus("connectionStatus", true, `Kağıt takıldı (${data.paperCount} baskı)`);
+    } else {
+      showStatus("connectionStatus", false, "Kağıt bitti");
+    }
+  } catch (err) {
+    showStatus("connectionStatus", false, err.message || "Hata");
+  }
+}
+
+async function disconnectPrinter() {
+  try {
+    await api("/api/disconnect", {
+      method: "POST"
+    });
+
+    showStatus("connectionStatus", false, "Bağlantı koptu, otomatik yeniden bağlanma başladı");
+
+    setTimeout(getStatus, 5000);
+  } catch (err) {
+    showStatus("connectionStatus", false, err.message || "Bağlantı koparma hatası");
+  }
+}
+
+function updatePaperCounter(count) {
+  const el = document.getElementById("paperCounter");
+
+  if (count <= 0) {
+    el.className = "status err";
+    el.textContent = "Kağıt sayacı: 0 - Kağıt bitti";
+  } else {
+    el.className = "status ok";
+    el.textContent = "Kağıt sayacı: " + count;
+  }
+}
+
+
+    getStatus();
+
+    setInterval(async () => {
+  try {
+    const data = await fetch("/api/status", {
+      headers: {
+        "x-api-token": TOKEN
+      }
+    });
+
+    const json = await data.json();
+
+    updatePaperCounter(json.paperCount);
+
+   if (json.activeError) {
+  const messages = {
+    PAPER_JAM: "Kağıt sıkıştı",
+    COVER_OPEN: "Kapak açık",
+    OVERHEAT: "Yazıcı aşırı ısındı",
+    UNKNOWN_COMMAND: "Bilinmeyen komut"
+  };
+
+  showStatus(
+    "connectionStatus",
+    false,
+    messages[json.activeError] || "Yazıcı hatası"
+  );
+} else if (!json.paper || json.paperCount <= 0) {
+  showStatus("connectionStatus", false, "Kağıt bitti");
+} else if (json.connected) {
+  showStatus("connectionStatus", true, `${json.mode.toUpperCase()} bağlı`);
+} else {
+  showStatus("connectionStatus", false, "Yazıcı bağlı değil");
+}
+
+  } catch (err) {
+    console.log(err);
+  }
+}, 1000);
+
+async function setError(code) {
+  try {
+    const data = await api("/api/error", {
+      method: "POST",
+      body: JSON.stringify({ code })
+    });
+
+    if (code) {
+      showStatus("connectionStatus", false, data.message);
+    } else {
+      showStatus("connectionStatus", true, "Hata temizlendi");
+    }
+
+    getStatus();
+    getLogs();
+  } catch (err) {
+    showStatus("connectionStatus", false, err.error?.detail || err.message || "Hata oluştu");
+  }
+}
+  </script>
+</body>
+</html>

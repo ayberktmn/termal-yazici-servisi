@@ -1,0 +1,1363 @@
+[
+  {
+    "ts": "2026-05-28T10:30:31.657Z",
+    "op": "reprint",
+    "conn": "lan",
+    "jobId": "88143e90-af96-4178-8044-f40b22ff2ff4",
+    "status": "success",
+    "detail": "İş tekrar yazdırıldı"
+  },
+  {
+    "ts": "2026-05-28T10:29:50.047Z",
+    "op": "print_image",
+    "conn": "lan",
+    "jobId": "88143e90-af96-4178-8044-f40b22ff2ff4",
+    "status": "success",
+    "detail": "https://via.placeholder.com/150"
+  },
+  {
+    "ts": "2026-05-28T10:29:48.608Z",
+    "op": "print_qr",
+    "conn": "lan",
+    "jobId": "691bf224-3556-4e52-8c8a-56eb6b6ddd00",
+    "status": "success",
+    "detail": "https://deneme.com"
+  },
+  {
+    "ts": "2026-05-28T10:29:46.810Z",
+    "op": "print_text",
+    "conn": "lan",
+    "jobId": "403b4984-6cf4-45c3-bcac-c24c6844547e",
+    "status": "success",
+    "contentType": "text",
+    "detail": "[tr] Merhaba Dünya"
+  },
+  {
+    "ts": "2026-05-28T10:29:41.894Z",
+    "op": "set_error",
+    "conn": "lan",
+    "status": "success",
+    "error": null,
+    "detail": "Hata temizlendi"
+  },
+  {
+    "ts": "2026-05-28T10:29:26.461Z",
+    "op": "set_error",
+    "conn": "lan",
+    "status": "error",
+    "error": {
+      "code": "UNKNOWN_COMMAND",
+      "detail": "Bilinmeyen komut"
+    },
+    "detail": "Bilinmeyen komut"
+  },
+  {
+    "ts": "2026-05-28T10:29:10.671Z",
+    "op": "set_error",
+    "conn": "lan",
+    "status": "error",
+    "error": {
+      "code": "OVERHEAT",
+      "detail": "Yazıcı aşırı ısındı"
+    },
+    "detail": "Yazıcı aşırı ısındı"
+  },
+  {
+    "ts": "2026-05-28T10:28:58.445Z",
+    "op": "set_error",
+    "conn": "lan",
+    "status": "error",
+    "error": {
+      "code": "COVER_OPEN",
+      "detail": "Kapak açık"
+    },
+    "detail": "Kapak açık"
+  },
+  {
+    "ts": "2026-05-28T10:28:34.895Z",
+    "op": "set_error",
+    "conn": "lan",
+    "status": "error",
+    "error": {
+      "code": "PAPER_JAM",
+      "detail": "Kağıt sıkıştı"
+    },
+    "detail": "Kağıt sıkıştı"
+  },
+  {
+    "ts": "2026-05-28T10:28:15.805Z",
+    "op": "reconnect",
+    "conn": "lan",
+    "status": "success",
+    "detail": "lan yeniden bağlandı"
+  },
+  {
+    "ts": "2026-05-28T10:28:14.798Z",
+    "op": "disconnect",
+    "conn": "lan",
+    "status": "error",
+    "error": {
+      "code": "COMM_ERROR",
+      "detail": "Bağlantı koptu"
+    }
+  },
+  {
+    "ts": "2026-05-28T10:27:27.462Z",
+    "op": "connect",
+    "conn": "lan",
+    "status": "success",
+    "detail": "lan yazıcı bağlantısı başarılı"
+  },
+  {
+    "ts": "2026-05-28T10:26:57.478Z",
+    "op": "connect",
+    "conn": "usb",
+    "status": "success",
+    "detail": "usb yazıcı bağlantısı başarılı"
+  },
+  {
+    "ts": "2026-05-28T10:13:08.020Z",
+    "op": "connect",
+    "conn": "usb",
+    "status": "success",
+    "detail": "usb yazıcı bağlantısı başarılı"
+  },
+  {
+    "ts": "2026-05-28T10:08:47.548Z",
+    "op": "set_error",
+    "conn": "usb",
+    "status": "success",
+    "error": null,
+    "detail": "Hata temizlendi"
+  },
+  {
+    "ts": "2026-05-28T10:08:40.755Z",
+    "op": "set_error",
+    "conn": "usb",
+    "status": "error",
+    "error": {
+      "code": "UNKNOWN_COMMAND",
+      "detail": "Bilinmeyen komut"
+    },
+    "detail": "Bilinmeyen komut"
+  },
+  {
+    "ts": "2026-05-28T10:08:37.428Z",
+    "op": "set_error",
+    "conn": "usb",
+    "status": "error",
+    "error": {
+      "code": "OVERHEAT",
+      "detail": "Yazıcı aşırı ısındı"
+    },
+    "detail": "Yazıcı aşırı ısındı"
+  },
+  {
+    "ts": "2026-05-28T10:08:34.141Z",
+    "op": "set_error",
+    "conn": "usb",
+    "status": "success",
+    "error": null,
+    "detail": "Hata temizlendi"
+  },
+  {
+    "ts": "2026-05-28T10:08:30.923Z",
+    "op": "set_error",
+    "conn": "usb",
+    "status": "error",
+    "error": {
+      "code": "UNKNOWN_COMMAND",
+      "detail": "Bilinmeyen komut"
+    },
+    "detail": "Bilinmeyen komut"
+  },
+  {
+    "ts": "2026-05-28T10:08:29.832Z",
+    "op": "reconnect",
+    "conn": "usb",
+    "status": "success",
+    "detail": "usb yeniden bağlandı"
+  },
+  {
+    "ts": "2026-05-28T10:08:28.813Z",
+    "op": "disconnect",
+    "conn": "usb",
+    "status": "error",
+    "error": {
+      "code": "COMM_ERROR",
+      "detail": "Bağlantı koptu"
+    }
+  },
+  {
+    "ts": "2026-05-28T10:08:19.871Z",
+    "op": "print_qr",
+    "conn": "usb",
+    "jobId": "537edf36-8f9d-40fa-8e61-31fbc6fd046c",
+    "status": "success",
+    "detail": "https://aasd.com"
+  },
+  {
+    "ts": "2026-05-28T10:02:10.163Z",
+    "op": "reconnect",
+    "conn": "usb",
+    "status": "success",
+    "detail": "usb yeniden bağlandı"
+  },
+  {
+    "ts": "2026-05-28T10:02:09.157Z",
+    "op": "disconnect",
+    "conn": "usb",
+    "status": "error",
+    "error": {
+      "code": "COMM_ERROR",
+      "detail": "Bağlantı koptu"
+    }
+  },
+  {
+    "ts": "2026-05-28T10:01:09.135Z",
+    "op": "print_text",
+    "conn": "usb",
+    "jobId": "23d763f0-cd08-4243-80bd-99a55a5a9c18",
+    "status": "success",
+    "contentType": "text",
+    "detail": "[en] Hello World"
+  },
+  {
+    "ts": "2026-05-28T10:01:03.322Z",
+    "op": "print_text",
+    "conn": "usb",
+    "jobId": "27d35f8f-6b1c-4207-9cde-88ed6a2d4561",
+    "status": "success",
+    "contentType": "text",
+    "detail": "[tr] Merhaba Dünya"
+  },
+  {
+    "ts": "2026-05-28T10:01:01.761Z",
+    "op": "connect",
+    "conn": "usb",
+    "status": "success",
+    "detail": "usb yazıcı bağlantısı başarılı"
+  },
+  {
+    "ts": "2026-05-28T09:58:56.905Z",
+    "op": "print_text",
+    "conn": "usb",
+    "jobId": "c753d393-e52e-4813-913c-e168717ceab9",
+    "status": "success",
+    "contentType": "text",
+    "detail": "Hello World"
+  },
+  {
+    "ts": "2026-05-28T09:58:51.640Z",
+    "op": "print_text",
+    "conn": "usb",
+    "jobId": "6a0bc263-9232-4f8d-ae80-c191230fae94",
+    "status": "success",
+    "contentType": "text",
+    "detail": "Hello World"
+  },
+  {
+    "ts": "2026-05-28T09:58:50.639Z",
+    "op": "connect",
+    "conn": "usb",
+    "status": "success",
+    "detail": "usb yazıcı bağlantısı başarılı"
+  },
+  {
+    "ts": "2026-05-28T09:58:48.245Z",
+    "op": "print_text",
+    "conn": null,
+    "jobId": "f06741e9-7313-486d-ab11-88b2f3a877cb",
+    "status": "error",
+    "contentType": "text",
+    "error": {
+      "code": "COMM_ERROR",
+      "detail": "Yazıcı bağlantı hatası"
+    }
+  },
+  {
+    "ts": "2026-05-28T09:47:49.958Z",
+    "op": "reprint",
+    "conn": "lan",
+    "jobId": "aac1311d-42a9-4e11-89ac-99415ffa90f1",
+    "status": "success",
+    "detail": "İş tekrar yazdırıldı"
+  },
+  {
+    "ts": "2026-05-28T09:47:48.701Z",
+    "op": "paper_status",
+    "conn": "lan",
+    "status": "success",
+    "detail": "Kağıt takıldı (10 baskı)"
+  },
+  {
+    "ts": "2026-05-28T09:47:41.093Z",
+    "op": "print_image",
+    "conn": "lan",
+    "jobId": "aac1311d-42a9-4e11-89ac-99415ffa90f1",
+    "status": "error",
+    "detail": "https://via.placeholder.com/150",
+    "error": {
+      "code": "PAPER_OUT",
+      "detail": "Kağıt bitti"
+    }
+  },
+  {
+    "ts": "2026-05-28T09:47:38.781Z",
+    "op": "paper_status",
+    "conn": "lan",
+    "status": "success",
+    "detail": "Kağıt bitti"
+  },
+  {
+    "ts": "2026-05-28T09:47:34.864Z",
+    "op": "print_image",
+    "conn": "lan",
+    "jobId": "ca2504d2-95ec-4acd-91ae-5902fa4e79aa",
+    "status": "success",
+    "detail": "https://via.placeholder.com/150"
+  },
+  {
+    "ts": "2026-05-28T09:47:28.718Z",
+    "op": "connect",
+    "conn": "lan",
+    "status": "success",
+    "detail": "lan yazıcı bağlantısı başarılı"
+  },
+  {
+    "ts": "2026-05-28T09:44:40.116Z",
+    "op": "paper_status",
+    "conn": "lan",
+    "status": "success",
+    "detail": "Kağıt takıldı (10 baskı)"
+  },
+  {
+    "ts": "2026-05-28T09:44:36.239Z",
+    "op": "reprint",
+    "conn": "lan",
+    "jobId": "d2378d51-f580-4bb8-8cd6-02dffc753b16",
+    "status": "error",
+    "error": {
+      "code": "PAPER_OUT",
+      "detail": "Kağıt bitti"
+    }
+  },
+  {
+    "ts": "2026-05-28T09:44:30.226Z",
+    "op": "print_image",
+    "jobId": "d2378d51-f580-4bb8-8cd6-02dffc753b16",
+    "status": "error",
+    "error": {
+      "code": "PAPER_OUT",
+      "detail": "Kağıt bitti"
+    }
+  },
+  {
+    "ts": "2026-05-28T09:44:26.998Z",
+    "op": "connect",
+    "conn": "lan",
+    "status": "success",
+    "detail": "lan yazıcı bağlantısı başarılı"
+  },
+  {
+    "ts": "2026-05-28T09:44:22.864Z",
+    "op": "print_image",
+    "jobId": "83182b93-d288-4282-ba8f-a9edd48a220f",
+    "status": "error",
+    "error": {
+      "code": "COMM_ERROR",
+      "detail": "Yazıcı bağlantı hatası"
+    }
+  },
+  {
+    "ts": "2026-05-28T09:44:21.638Z",
+    "op": "paper_status",
+    "conn": null,
+    "status": "success",
+    "detail": "Kağıt bitti"
+  },
+  {
+    "ts": "2026-05-28T09:42:10.907Z",
+    "op": "paper_status",
+    "conn": "usb",
+    "status": "success",
+    "detail": "Kağıt takıldı (10 baskı)"
+  },
+  {
+    "ts": "2026-05-28T09:42:07.380Z",
+    "op": "reprint",
+    "conn": "usb",
+    "jobId": "9ebc0915-0f23-445f-97b0-99ea8b87fb0d",
+    "status": "error",
+    "error": {
+      "code": "PAPER_OUT",
+      "detail": "Kağıt bitti"
+    }
+  },
+  {
+    "ts": "2026-05-28T09:42:02.685Z",
+    "op": "print_image",
+    "jobId": "9ebc0915-0f23-445f-97b0-99ea8b87fb0d",
+    "status": "error",
+    "error": {
+      "code": "PAPER_OUT",
+      "detail": "Kağıt bitti"
+    }
+  },
+  {
+    "ts": "2026-05-28T09:42:01.612Z",
+    "op": "paper_status",
+    "conn": "usb",
+    "status": "success",
+    "detail": "Kağıt bitti"
+  },
+  {
+    "ts": "2026-05-28T09:41:57.981Z",
+    "op": "reprint",
+    "conn": "usb",
+    "jobId": "d7143336-a6af-4354-81b9-2c4c90743468",
+    "status": "success",
+    "detail": "İş tekrar yazdırıldı"
+  },
+  {
+    "ts": "2026-05-28T09:41:48.764Z",
+    "op": "print_image",
+    "conn": "usb",
+    "jobId": "d7143336-a6af-4354-81b9-2c4c90743468",
+    "status": "success",
+    "detail": "https://via.placeholder.com/150"
+  },
+  {
+    "ts": "2026-05-28T09:40:53.585Z",
+    "op": "paper_status",
+    "conn": "usb",
+    "status": "success",
+    "detail": "Kağıt takıldı (10 baskı)"
+  },
+  {
+    "ts": "2026-05-28T09:40:49.160Z",
+    "op": "reprint",
+    "conn": "usb",
+    "jobId": "88c0a43e-62e1-4b1d-be09-acc5540cc797",
+    "status": "error",
+    "error": {
+      "code": "PAPER_OUT",
+      "detail": "Kağıt bitti"
+    }
+  },
+  {
+    "ts": "2026-05-28T09:40:42.774Z",
+    "op": "print_image",
+    "jobId": "88c0a43e-62e1-4b1d-be09-acc5540cc797",
+    "status": "error",
+    "error": {
+      "code": "PAPER_OUT",
+      "detail": "Kağıt bitti"
+    }
+  },
+  {
+    "ts": "2026-05-28T09:40:40.717Z",
+    "op": "paper_status",
+    "conn": "usb",
+    "status": "success",
+    "detail": "Kağıt bitti"
+  },
+  {
+    "ts": "2026-05-28T09:40:38.303Z",
+    "op": "connect",
+    "conn": "usb",
+    "status": "success",
+    "detail": "usb yazıcı bağlantısı başarılı"
+  },
+  {
+    "ts": "2026-05-28T09:37:59.051Z",
+    "op": "reprint",
+    "conn": "usb",
+    "jobId": "2a892826-a0e9-483e-b766-37719c478791",
+    "status": "success",
+    "detail": "İş tekrar yazdırıldı"
+  },
+  {
+    "ts": "2026-05-28T09:37:45.497Z",
+    "op": "print_image",
+    "jobId": "2a892826-a0e9-483e-b766-37719c478791",
+    "status": "error",
+    "error": {
+      "code": "PAPER_OUT",
+      "detail": "Kağıt bitti"
+    }
+  },
+  {
+    "ts": "2026-05-28T09:37:43.268Z",
+    "op": "connect",
+    "conn": "usb",
+    "status": "success",
+    "detail": "usb yazıcı bağlantısı başarılı"
+  },
+  {
+    "ts": "2026-05-28T09:37:37.793Z",
+    "op": "print_image",
+    "jobId": "52586e4f-3560-4f0b-8fdf-9b253583e4e6",
+    "status": "error",
+    "error": {
+      "code": "COMM_ERROR",
+      "detail": "Yazıcı bağlantı hatası"
+    }
+  },
+  {
+    "ts": "2026-05-28T09:37:36.333Z",
+    "op": "paper_status",
+    "conn": null,
+    "status": "success",
+    "detail": "Kağıt bitti"
+  },
+  {
+    "ts": "2026-05-28T09:35:26.643Z",
+    "op": "paper_status",
+    "conn": null,
+    "status": "success",
+    "detail": "Kağıt takıldı (10 baskı)"
+  },
+  {
+    "ts": "2026-05-28T09:34:44.877Z",
+    "op": "print_image",
+    "jobId": "0ce841e3-bd45-423f-af8c-d6da750910b0",
+    "status": "error",
+    "error": {
+      "code": "COMM_ERROR",
+      "detail": "Yazıcı bağlantı hatası"
+    }
+  },
+  {
+    "ts": "2026-05-28T09:34:41.746Z",
+    "op": "paper_status",
+    "conn": null,
+    "status": "success",
+    "detail": "Kağıt bitti"
+  },
+  {
+    "ts": "2026-05-28T09:29:44.362Z",
+    "op": "print_text",
+    "conn": "usb",
+    "jobId": "0fcf8a70-9639-47cc-8b2c-d7cf880bebf0",
+    "status": "success",
+    "contentType": "text",
+    "detail": "Merhaba Dünya"
+  },
+  {
+    "ts": "2026-05-28T09:29:41.058Z",
+    "op": "set_error",
+    "conn": "usb",
+    "status": "success",
+    "error": null,
+    "detail": "Hata temizlendi"
+  },
+  {
+    "ts": "2026-05-28T09:29:39.009Z",
+    "op": "print_text",
+    "conn": "usb",
+    "jobId": "3ba5a317-291e-48d9-9439-91e304934b13",
+    "status": "error",
+    "contentType": "text",
+    "error": {
+      "code": "UNKNOWN_COMMAND",
+      "detail": "Bilinmeyen komut"
+    }
+  },
+  {
+    "ts": "2026-05-28T09:29:35.675Z",
+    "op": "set_error",
+    "conn": "usb",
+    "status": "error",
+    "error": {
+      "code": "UNKNOWN_COMMAND",
+      "detail": "Bilinmeyen komut"
+    },
+    "detail": "Bilinmeyen komut"
+  },
+  {
+    "ts": "2026-05-28T09:29:32.386Z",
+    "op": "print_text",
+    "conn": "usb",
+    "jobId": "448ff264-5852-416e-8a24-aabecc7456ac",
+    "status": "error",
+    "contentType": "text",
+    "error": {
+      "code": "PAPER_JAM",
+      "detail": "Kağıt sıkıştı"
+    }
+  },
+  {
+    "ts": "2026-05-28T09:29:30.162Z",
+    "op": "print_qr",
+    "jobId": "1879ddbe-65e1-400e-ac37-4104e3882a21",
+    "status": "error",
+    "error": {
+      "code": "PAPER_JAM",
+      "detail": "Kağıt sıkıştı"
+    }
+  },
+  {
+    "ts": "2026-05-28T09:29:23.428Z",
+    "op": "set_error",
+    "conn": "usb",
+    "status": "error",
+    "error": {
+      "code": "PAPER_JAM",
+      "detail": "Kağıt sıkıştı"
+    },
+    "detail": "Kağıt sıkıştı"
+  },
+  {
+    "ts": "2026-05-28T09:21:42.322Z",
+    "op": "set_error",
+    "conn": "usb",
+    "status": "success",
+    "error": null,
+    "detail": "Hata temizlendi"
+  },
+  {
+    "ts": "2026-05-28T09:19:26.394Z",
+    "op": "print_text",
+    "conn": "usb",
+    "jobId": "1b152b75-bca1-45bd-8f2f-61788094c224",
+    "status": "error",
+    "contentType": "text",
+    "error": {
+      "code": "OVERHEAT",
+      "detail": "Yazıcı aşırı ısındı"
+    }
+  },
+  {
+    "ts": "2026-05-28T09:19:24.634Z",
+    "op": "set_error",
+    "conn": "usb",
+    "status": "error",
+    "error": {
+      "code": "OVERHEAT",
+      "detail": "Yazıcı aşırı ısındı"
+    },
+    "detail": "Yazıcı aşırı ısındı"
+  },
+  {
+    "ts": "2026-05-28T09:19:21.772Z",
+    "op": "print_image",
+    "jobId": "73cce5a2-6d8c-41aa-a29d-3aebf2d57d02",
+    "status": "error",
+    "error": {
+      "code": "PAPER_JAM",
+      "detail": "Kağıt sıkıştı"
+    }
+  },
+  {
+    "ts": "2026-05-28T09:19:19.266Z",
+    "op": "print_text",
+    "conn": "usb",
+    "jobId": "55b346aa-e199-4b91-bf1b-62d0efd2fe12",
+    "status": "error",
+    "contentType": "text",
+    "error": {
+      "code": "PAPER_JAM",
+      "detail": "Kağıt sıkıştı"
+    }
+  },
+  {
+    "ts": "2026-05-28T09:19:18.012Z",
+    "op": "set_error",
+    "conn": "usb",
+    "status": "error",
+    "error": {
+      "code": "PAPER_JAM",
+      "detail": "Kağıt sıkıştı"
+    },
+    "detail": "Kağıt sıkıştı"
+  },
+  {
+    "ts": "2026-05-28T09:19:14.893Z",
+    "op": "print_text",
+    "conn": "usb",
+    "jobId": "036d38f3-f218-45b2-b6e5-9006b8324079",
+    "status": "success",
+    "contentType": "text",
+    "detail": "Merhaba Dünya"
+  },
+  {
+    "ts": "2026-05-28T09:19:11.443Z",
+    "op": "set_error",
+    "conn": "usb",
+    "status": "success",
+    "error": null,
+    "detail": "Hata temizlendi"
+  },
+  {
+    "ts": "2026-05-28T09:19:04.530Z",
+    "op": "set_error",
+    "conn": "usb",
+    "status": "error",
+    "error": {
+      "code": "COVER_OPEN",
+      "detail": "Kapak açık"
+    },
+    "detail": "Kapak açık"
+  },
+  {
+    "ts": "2026-05-28T09:19:01.196Z",
+    "op": "set_error",
+    "conn": "usb",
+    "status": "error",
+    "error": {
+      "code": "UNKNOWN_COMMAND",
+      "detail": "Bilinmeyen komut"
+    },
+    "detail": "Bilinmeyen komut"
+  },
+  {
+    "ts": "2026-05-28T09:17:38.939Z",
+    "op": "set_error",
+    "conn": "usb",
+    "status": "success",
+    "error": null,
+    "detail": "Hata temizlendi"
+  },
+  {
+    "ts": "2026-05-28T09:17:27.929Z",
+    "op": "set_error",
+    "conn": "usb",
+    "status": "error",
+    "error": {
+      "code": "PAPER_JAM",
+      "detail": "Kağıt sıkıştı"
+    },
+    "detail": "Kağıt sıkıştı"
+  },
+  {
+    "ts": "2026-05-28T09:17:26.266Z",
+    "op": "connect",
+    "conn": "usb",
+    "status": "success",
+    "detail": "usb yazıcı bağlantısı başarılı"
+  },
+  {
+    "ts": "2026-05-28T09:17:23.556Z",
+    "op": "set_error",
+    "conn": null,
+    "status": "error",
+    "error": {
+      "code": "PAPER_JAM",
+      "detail": "Kağıt sıkıştı"
+    },
+    "detail": "Kağıt sıkıştı"
+  },
+  {
+    "ts": "2026-05-28T09:11:50.330Z",
+    "op": "print_qr",
+    "jobId": "2da77c56-b767-4cfc-8d52-527b17214b66",
+    "status": "error",
+    "error": {
+      "code": "PAPER_OUT",
+      "detail": "Kağıt bitti"
+    }
+  },
+  {
+    "ts": "2026-05-28T09:11:48.993Z",
+    "op": "print_image",
+    "jobId": "1cfecf6c-0a8b-4c57-93ce-b4d2383bf2ca",
+    "status": "error",
+    "error": {
+      "code": "PAPER_OUT",
+      "detail": "Kağıt bitti"
+    }
+  },
+  {
+    "ts": "2026-05-28T09:11:47.561Z",
+    "op": "print_text",
+    "conn": "usb",
+    "jobId": "3b8a2d47-dd88-40e0-8ee2-dec3a1521bf6",
+    "status": "error",
+    "contentType": "text",
+    "error": {
+      "code": "PAPER_OUT",
+      "detail": "Kağıt bitti"
+    }
+  },
+  {
+    "ts": "2026-05-28T09:11:44.920Z",
+    "op": "print_text",
+    "conn": "usb",
+    "jobId": "8ed50594-a6e4-467f-9349-0bd9e06b30a0",
+    "status": "success",
+    "contentType": "text",
+    "detail": "Merhaba Dünya"
+  },
+  {
+    "ts": "2026-05-28T09:11:44.724Z",
+    "op": "print_text",
+    "conn": "usb",
+    "jobId": "8ba4ed82-2ac6-4ab0-a17c-5a626b8a11ff",
+    "status": "success",
+    "contentType": "text",
+    "detail": "Merhaba Dünya"
+  },
+  {
+    "ts": "2026-05-28T09:11:44.578Z",
+    "op": "print_text",
+    "conn": "usb",
+    "jobId": "149c5ae0-396a-4346-ac56-4d2377f1b417",
+    "status": "success",
+    "contentType": "text",
+    "detail": "Merhaba Dünya"
+  },
+  {
+    "ts": "2026-05-28T09:11:44.393Z",
+    "op": "print_text",
+    "conn": "usb",
+    "jobId": "948080ab-d11d-438d-8ec7-38cd06f2da74",
+    "status": "success",
+    "contentType": "text",
+    "detail": "Merhaba Dünya"
+  },
+  {
+    "ts": "2026-05-28T09:11:44.217Z",
+    "op": "print_text",
+    "conn": "usb",
+    "jobId": "c602c89a-f7cd-4b93-b0f0-3dba9487504f",
+    "status": "success",
+    "contentType": "text",
+    "detail": "Merhaba Dünya"
+  },
+  {
+    "ts": "2026-05-28T09:11:43.882Z",
+    "op": "print_text",
+    "conn": "usb",
+    "jobId": "d7cb0b68-ecf1-45bb-b10e-8be5ea39368d",
+    "status": "success",
+    "contentType": "text",
+    "detail": "Merhaba Dünya"
+  },
+  {
+    "ts": "2026-05-28T09:11:39.761Z",
+    "op": "print_text",
+    "conn": "usb",
+    "jobId": "d352b61a-ccc5-448a-aba9-d2986a73c6a7",
+    "status": "success",
+    "contentType": "text",
+    "detail": "Merhaba Dünya"
+  },
+  {
+    "ts": "2026-05-28T09:11:37.627Z",
+    "op": "print_image",
+    "conn": "usb",
+    "jobId": "0ff9ed28-6a11-4162-bd56-2cc24c3754ea",
+    "status": "success",
+    "detail": "https://via.placeholder.com/150"
+  },
+  {
+    "ts": "2026-05-28T09:11:21.121Z",
+    "op": "print_image",
+    "conn": "usb",
+    "jobId": "43868224-9e0d-4d1e-9171-2b1c1cf6d039",
+    "status": "success",
+    "detail": "https://via.placeholder.com/150"
+  },
+  {
+    "ts": "2026-05-28T09:11:17.106Z",
+    "op": "print_text",
+    "conn": "usb",
+    "jobId": "02067c9a-f0f0-420f-acc0-ecbd85706bdd",
+    "status": "success",
+    "contentType": "text",
+    "detail": "Merhaba Dünya"
+  },
+  {
+    "ts": "2026-05-28T09:11:15.572Z",
+    "op": "paper_status",
+    "conn": "usb",
+    "status": "success",
+    "detail": "Kağıt takıldı (10 baskı)"
+  },
+  {
+    "ts": "2026-05-28T09:10:13.218Z",
+    "op": "paper_status",
+    "conn": "usb",
+    "status": "success",
+    "detail": "Kağıt bitti"
+  },
+  {
+    "ts": "2026-05-28T09:09:40.877Z",
+    "op": "print_image",
+    "conn": "usb",
+    "jobId": "3d4ffdd9-0378-4a71-9982-606e40189eab",
+    "status": "success",
+    "detail": "https://via.placeholder.com/150"
+  },
+  {
+    "ts": "2026-05-28T09:09:34.447Z",
+    "op": "print_text",
+    "conn": "usb",
+    "jobId": "329104a3-0325-4b14-a0c3-2bdca0fe213b",
+    "status": "success",
+    "contentType": "text",
+    "detail": "Merhaba Dünya"
+  },
+  {
+    "ts": "2026-05-28T09:09:31.843Z",
+    "op": "paper_status",
+    "conn": "usb",
+    "status": "success",
+    "detail": "Kağıt takıldı (10 baskı)"
+  },
+  {
+    "ts": "2026-05-28T09:09:17.474Z",
+    "op": "connect",
+    "conn": "usb",
+    "status": "success",
+    "detail": "usb yazıcı bağlantısı başarılı"
+  },
+  {
+    "ts": "2026-05-28T09:07:57.819Z",
+    "op": "reconnect",
+    "conn": null,
+    "status": "error",
+    "detail": "Yeniden bağlanılamadı"
+  },
+  {
+    "ts": "2026-05-28T09:07:50.795Z",
+    "op": "disconnect",
+    "conn": null,
+    "status": "error",
+    "error": {
+      "code": "COMM_ERROR",
+      "detail": "Bağlantı koptu"
+    }
+  },
+  {
+    "ts": "2026-05-28T09:07:43.453Z",
+    "op": "paper_status",
+    "conn": null,
+    "status": "success",
+    "detail": "Kağıt bitti"
+  },
+  {
+    "ts": "2026-05-28T09:06:51.897Z",
+    "op": "paper_status",
+    "conn": null,
+    "status": "success",
+    "detail": "Kağıt takıldı (3 baskı)"
+  },
+  {
+    "ts": "2026-05-28T09:00:08.497Z",
+    "op": "reconnect",
+    "conn": "lan",
+    "status": "success",
+    "detail": "lan yeniden bağlandı"
+  },
+  {
+    "ts": "2026-05-28T09:00:07.488Z",
+    "op": "disconnect",
+    "conn": "lan",
+    "status": "error",
+    "error": {
+      "code": "COMM_ERROR",
+      "detail": "Bağlantı koptu"
+    }
+  },
+  {
+    "ts": "2026-05-28T09:00:06.650Z",
+    "op": "connect",
+    "conn": "lan",
+    "status": "success",
+    "detail": "lan yazıcı bağlantısı başarılı"
+  },
+  {
+    "ts": "2026-05-28T08:59:57.624Z",
+    "op": "reconnect",
+    "conn": "usb",
+    "status": "success",
+    "detail": "usb yeniden bağlandı"
+  },
+  {
+    "ts": "2026-05-28T08:59:56.618Z",
+    "op": "disconnect",
+    "conn": "usb",
+    "status": "error",
+    "error": {
+      "code": "COMM_ERROR",
+      "detail": "Bağlantı koptu"
+    }
+  },
+  {
+    "ts": "2026-05-28T08:59:55.644Z",
+    "op": "connect",
+    "conn": "usb",
+    "status": "success",
+    "detail": "usb yazıcı bağlantısı başarılı"
+  },
+  {
+    "ts": "2026-05-28T08:59:54.282Z",
+    "op": "reconnect",
+    "conn": null,
+    "status": "error",
+    "detail": "Yeniden bağlanılamadı"
+  },
+  {
+    "ts": "2026-05-28T08:59:47.248Z",
+    "op": "disconnect",
+    "conn": null,
+    "status": "error",
+    "error": {
+      "code": "COMM_ERROR",
+      "detail": "Bağlantı koptu"
+    }
+  },
+  {
+    "ts": "2026-05-28T08:55:32.194Z",
+    "op": "print_text",
+    "conn": "usb",
+    "jobId": "ba82386f-e210-47de-9e71-e3812c319aec",
+    "status": "success",
+    "contentType": "text",
+    "detail": "Test yazisi"
+  },
+  {
+    "ts": "2026-05-28T08:55:28.723Z",
+    "op": "paper_status",
+    "conn": "usb",
+    "status": "success",
+    "detail": "Kağıt takıldı"
+  },
+  {
+    "ts": "2026-05-28T08:54:43.794Z",
+    "op": "print_text",
+    "conn": "usb",
+    "jobId": "2b499690-7fc9-4268-bb5b-f79297bdb92c",
+    "status": "error",
+    "contentType": "text",
+    "error": {
+      "code": "PAPER_OUT",
+      "detail": "Kağıt bitti"
+    }
+  },
+  {
+    "ts": "2026-05-28T08:54:37.971Z",
+    "op": "paper_status",
+    "conn": "usb",
+    "status": "success",
+    "detail": "Kağıt bitti"
+  },
+  {
+    "ts": "2026-05-28T08:54:33.703Z",
+    "op": "print_text",
+    "conn": "usb",
+    "jobId": "f6231226-6b60-4995-ae68-c88745f86824",
+    "status": "success",
+    "contentType": "text",
+    "detail": "Test yazisi"
+  },
+  {
+    "ts": "2026-05-28T08:54:22.523Z",
+    "op": "print_text",
+    "conn": "usb",
+    "jobId": "e1ea6576-f786-41cf-b394-4db2fe49c9cb",
+    "status": "success",
+    "contentType": "text",
+    "detail": "Test yazisi"
+  },
+  {
+    "ts": "2026-05-28T08:54:18.342Z",
+    "op": "paper_status",
+    "conn": "usb",
+    "status": "success",
+    "detail": "Kağıt takıldı"
+  },
+  {
+    "ts": "2026-05-28T08:53:50.330Z",
+    "op": "print_text",
+    "conn": "usb",
+    "jobId": "976f4cc2-5b20-4ea0-8677-e4859d2bd1c9",
+    "status": "error",
+    "contentType": "text",
+    "error": {
+      "code": "PAPER_OUT",
+      "detail": "Kağıt bitti"
+    }
+  },
+  {
+    "ts": "2026-05-28T08:53:43.708Z",
+    "op": "connect",
+    "conn": "usb",
+    "status": "success",
+    "detail": "usb yazıcı bağlantısı başarılı"
+  },
+  {
+    "ts": "2026-05-28T08:53:07.719Z",
+    "op": "print_text",
+    "conn": "usb",
+    "jobId": "2eed4621-975d-4de7-bf7e-2c1e84fbc299",
+    "status": "error",
+    "contentType": "text",
+    "error": {
+      "code": "PAPER_OUT",
+      "detail": "Kağıt bitti"
+    }
+  },
+  {
+    "ts": "2026-05-28T08:52:36.800Z",
+    "op": "paper_status",
+    "conn": "usb",
+    "status": "success",
+    "detail": "Kağıt bitti"
+  },
+  {
+    "ts": "2026-05-28T08:52:31.920Z",
+    "op": "connect",
+    "conn": "usb",
+    "status": "success",
+    "detail": "usb yazıcı bağlantısı başarılı"
+  },
+  {
+    "ts": "2026-05-28T08:47:24.420Z",
+    "op": "connect",
+    "conn": "lan",
+    "status": "success",
+    "detail": "lan yazıcı bağlantısı başarılı"
+  },
+  {
+    "ts": "2026-05-28T08:46:01.472Z",
+    "op": "paper_status",
+    "status": "success",
+    "detail": "Kağıt takıldı"
+  },
+  {
+    "ts": "2026-05-28T08:46:00.378Z",
+    "op": "paper_status",
+    "status": "success",
+    "detail": "Kağıt bitti"
+  },
+  {
+    "ts": "2026-05-28T08:45:58.547Z",
+    "op": "connect",
+    "conn": "usb",
+    "status": "success",
+    "detail": "usb yazıcı bağlantısı başarılı"
+  },
+  {
+    "ts": "2026-05-28T08:39:36.328Z",
+    "op": "reprint",
+    "conn": null,
+    "jobId": "802b2c75-28d4-4d7a-9a47-0713d64a4e85",
+    "status": "success",
+    "detail": "İş tekrar yazdırıldı"
+  },
+  {
+    "ts": "2026-05-28T08:31:10.229Z",
+    "op": "connect",
+    "conn": "usb",
+    "status": "success",
+    "detail": "usb yazıcı bağlantısı başarılı"
+  },
+  {
+    "ts": "2026-05-28T08:26:05.963Z",
+    "op": "connect",
+    "conn": "usb",
+    "status": "success",
+    "detail": "usb yazıcı bağlantısı başarılı"
+  },
+  {
+    "ts": "2026-05-28T08:16:12.888Z",
+    "op": "print_image",
+    "conn": "usb",
+    "jobId": "535cd753-b87e-4c04-ad8b-d141222ca4c9",
+    "status": "success",
+    "detail": "https://via.placeholder.com/150"
+  },
+  {
+    "ts": "2026-05-28T08:16:08.938Z",
+    "op": "print_qr",
+    "conn": "usb",
+    "jobId": "1241c8b1-065d-4584-bc66-de02ced56d38",
+    "status": "success",
+    "detail": "https://qrtagnow.com"
+  },
+  {
+    "ts": "2026-05-28T08:16:05.945Z",
+    "op": "print_text",
+    "conn": "usb",
+    "jobId": "4ccf988f-8a21-4ba0-a56f-5b2454bc9320",
+    "status": "success",
+    "contentType": "text",
+    "detail": "Merhaba Dünya"
+  },
+  {
+    "ts": "2026-05-28T08:16:03.274Z",
+    "op": "connect",
+    "conn": "usb",
+    "status": "success",
+    "detail": "usb yazıcı bağlantısı başarılı"
+  },
+  {
+    "ts": "2026-05-28T08:16:02.447Z",
+    "op": "connect",
+    "conn": "lan",
+    "status": "success",
+    "detail": "lan yazıcı bağlantısı başarılı"
+  },
+  {
+    "ts": "2026-05-28T08:13:59.273Z",
+    "op": "print_image",
+    "conn": "lan",
+    "jobId": "28d894af-7e97-4b35-8acc-309d6e121420",
+    "status": "success",
+    "detail": "https://via.placeholder.com/150"
+  },
+  {
+    "ts": "2026-05-28T08:13:57.002Z",
+    "op": "print_qr",
+    "conn": "lan",
+    "jobId": "f95ebfa3-b5b1-4304-892a-eef52b425466",
+    "status": "success",
+    "detail": "https://aaa.com"
+  },
+  {
+    "ts": "2026-05-28T08:13:48.458Z",
+    "op": "print_qr",
+    "conn": "lan",
+    "jobId": "802b2c75-28d4-4d7a-9a47-0713d64a4e85",
+    "status": "success",
+    "detail": "https://qrtagnow.com"
+  },
+  {
+    "ts": "2026-05-28T08:13:46.075Z",
+    "op": "print_text",
+    "conn": "lan",
+    "jobId": "33ac82b3-ac00-4b95-933b-a3b1f9779f42",
+    "status": "success",
+    "contentType": "text",
+    "detail": "Merhaba Dünya"
+  },
+  {
+    "ts": "2026-05-28T08:13:43.446Z",
+    "op": "connect",
+    "conn": "lan",
+    "status": "success",
+    "detail": "lan yazıcı bağlantısı başarılı"
+  },
+  {
+    "ts": "2026-05-28T08:13:41.413Z",
+    "op": "connect",
+    "conn": "usb",
+    "status": "success",
+    "detail": "usb yazıcı bağlantısı başarılı"
+  },
+  {
+    "ts": "2026-05-28T08:13:35.674Z",
+    "op": "connect",
+    "conn": "usb",
+    "status": "success",
+    "detail": "usb yazıcı bağlantısı başarılı"
+  },
+  {
+    "ts": "2026-05-28T08:08:03.076Z",
+    "op": "print_image",
+    "conn": "usb",
+    "jobId": "af2400c4-d3e6-4ed0-9cb9-b7253fafb269",
+    "status": "success",
+    "detail": "https://via.placeholder.com/150"
+  },
+  {
+    "ts": "2026-05-28T08:07:57.391Z",
+    "op": "print_qr",
+    "conn": "usb",
+    "jobId": "57f523b6-b635-47d1-a72f-735bb7a7928c",
+    "status": "success",
+    "detail": "https://qrtagnow.com"
+  },
+  {
+    "ts": "2026-05-28T08:07:38.143Z",
+    "op": "connect",
+    "conn": "usb",
+    "status": "success",
+    "detail": "usb yazıcı bağlantısı başarılı"
+  },
+  {
+    "ts": "2026-05-28T08:06:36.242Z",
+    "op": "connect",
+    "conn": "usb",
+    "status": "success",
+    "detail": "usb yazıcı bağlantısı başarılı"
+  },
+  {
+    "ts": "2026-05-28T08:05:32.217Z",
+    "op": "connect",
+    "conn": "usb",
+    "status": "success",
+    "detail": "usb yazıcı bağlantısı başarılı"
+  },
+  {
+    "ts": "2026-05-28T08:04:39.900Z",
+    "op": "connect",
+    "conn": "usb",
+    "status": "success",
+    "detail": "usb yazıcı bağlantısı başarılı"
+  },
+  {
+    "ts": "2026-05-28T08:04:03.648Z",
+    "op": "connect",
+    "conn": "usb",
+    "status": "success",
+    "detail": "usb yazıcı bağlantısı başarılı"
+  },
+  {
+    "ts": "2026-05-28T08:02:44.357Z",
+    "op": "print_image",
+    "jobId": "e3829f5e-98e8-4a48-94bc-a098968b1beb",
+    "status": "error",
+    "error": {
+      "code": "COMM_ERROR",
+      "detail": "Yazıcı bağlı değil"
+    }
+  },
+  {
+    "ts": "2026-05-28T08:02:40.651Z",
+    "op": "print_qr",
+    "jobId": "df29ceb0-a41a-4eb1-8f9e-3365f1fe4238",
+    "status": "error",
+    "error": {
+      "code": "COMM_ERROR",
+      "detail": "Yazıcı bağlı değil"
+    }
+  },
+  {
+    "ts": "2026-05-28T08:02:36.543Z",
+    "op": "connect",
+    "conn": "usb",
+    "status": "success",
+    "detail": "usb yazıcı bağlantısı başarılı"
+  },
+  {
+    "ts": "2026-05-28T08:02:14.802Z",
+    "op": "print_image",
+    "jobId": "ce7ecc8c-3a95-428a-b93a-9faf0215df6e",
+    "status": "error",
+    "error": {
+      "code": "COMM_ERROR",
+      "detail": "Yazıcı bağlı değil"
+    }
+  },
+  {
+    "ts": "2026-05-28T08:02:01.759Z",
+    "op": "print_qr",
+    "jobId": "5ddbe668-5686-4501-9fb9-1f895d0bc422",
+    "status": "error",
+    "error": {
+      "code": "COMM_ERROR",
+      "detail": "Yazıcı bağlı değil"
+    }
+  },
+  {
+    "ts": "2026-05-28T08:00:06.324Z",
+    "op": "connect",
+    "conn": "usb",
+    "status": "success",
+    "detail": "usb yazıcı bağlantısı başarılı"
+  }
+]

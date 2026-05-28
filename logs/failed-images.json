@@ -1,0 +1,74 @@
+[
+  {
+    "ts": "2026-05-28T09:47:41.089Z",
+    "jobId": "aac1311d-42a9-4e11-89ac-99415ffa90f1",
+    "imageUrl": "https://via.placeholder.com/150",
+    "error": {
+      "code": "PAPER_OUT",
+      "detail": "Kağıt bitti"
+    }
+  },
+  {
+    "ts": "2026-05-28T09:44:30.221Z",
+    "jobId": "d2378d51-f580-4bb8-8cd6-02dffc753b16",
+    "imageUrl": "https://via.placeholder.com/150",
+    "error": {
+      "code": "PAPER_OUT",
+      "detail": "Kağıt bitti"
+    }
+  },
+  {
+    "ts": "2026-05-28T09:44:22.859Z",
+    "jobId": "83182b93-d288-4282-ba8f-a9edd48a220f",
+    "imageUrl": "https://via.placeholder.com/150",
+    "error": {
+      "code": "COMM_ERROR",
+      "detail": "Yazıcı bağlantı hatası"
+    }
+  },
+  {
+    "ts": "2026-05-28T09:42:02.681Z",
+    "jobId": "9ebc0915-0f23-445f-97b0-99ea8b87fb0d",
+    "imageUrl": "https://via.placeholder.com/150",
+    "error": {
+      "code": "PAPER_OUT",
+      "detail": "Kağıt bitti"
+    }
+  },
+  {
+    "ts": "2026-05-28T09:40:42.773Z",
+    "jobId": "88c0a43e-62e1-4b1d-be09-acc5540cc797",
+    "imageUrl": "https://via.placeholder.com/150",
+    "error": {
+      "code": "PAPER_OUT",
+      "detail": "Kağıt bitti"
+    }
+  },
+  {
+    "ts": "2026-05-28T09:37:45.491Z",
+    "jobId": "2a892826-a0e9-483e-b766-37719c478791",
+    "imageUrl": "https://via.placeholder.com/150",
+    "error": {
+      "code": "PAPER_OUT",
+      "detail": "Kağıt bitti"
+    }
+  },
+  {
+    "ts": "2026-05-28T09:37:37.788Z",
+    "jobId": "52586e4f-3560-4f0b-8fdf-9b253583e4e6",
+    "imageUrl": "https://via.placeholder.com/150",
+    "error": {
+      "code": "COMM_ERROR",
+      "detail": "Yazıcı bağlantı hatası"
+    }
+  },
+  {
+    "ts": "2026-05-28T09:34:44.871Z",
+    "jobId": "0ce841e3-bd45-423f-af8c-d6da750910b0",
+    "imageUrl": "https://via.placeholder.com/150",
+    "error": {
+      "code": "COMM_ERROR",
+      "detail": "Yazıcı bağlantı hatası"
+    }
+  }
+]
